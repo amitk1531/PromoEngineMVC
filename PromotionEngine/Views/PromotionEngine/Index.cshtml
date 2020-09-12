@@ -15,29 +15,29 @@
         {
             <div class="=" form-group">
                 <label for="A">Number of items of SKU "A"</label>
-                <input type="number" class="form-control" id="A" name="A" value="@Model.A"" />
+                <input type="number" class="form-control" id="A" name="A" value="@Model.A"" min="0" onfocus="this.value=''" />
 
             </div>
             <div class="=" form-group">
                 <label for="B">Number of items of SKU "B"</label>
-                <input type="number" class="form-control" id="B" name="B" value="@Model.B" />
+                <input type="number" class="form-control" id="B" name="B" value="@Model.B" min="0" onfocus="this.value=''" />
 
             </div>
             <div class="=" form-group">
                 <label for="C">Number of items of SKU "C"</label>
-                <input type="number" class="form-control" id="C" name="C" value="@Model.C" />
+                <input type="number" class="form-control" id="C" name="C" value="@Model.C" min="0" onfocus="this.value=''" />
 
             </div>
             <div class="=" form-group">
                 <label for="D">Number of items of SKU "D"</label>
-                <input type="number" class="form-control" id="D" name="D" value="@Model.D" />
+                <input type="number" class="form-control" id="D" name="D" value="@Model.D" min="0" onfocus="this.value=''" />
             </div>
 
             <br />
 
             <div class="=" form-group">
                 <label for="Total">Total Order Value</label>
-                <input type="number" class="form-control" id="Total" name="D" value="@Model.Total" />
+                <input type="number" class="form-control" id="Total" name="D" disabled="disabled" value="@Model.Total" />
             </div>
 
             <br />
