@@ -5,7 +5,7 @@ using System.Web;
 
 namespace PromotionEngine.Models
 {
-    public class PromotionEngine
+    public class PromotionEngineModel
     {
         public int A { get; set; }
         public int B { get; set; }

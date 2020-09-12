@@ -1,0 +1,52 @@
+﻿@model PromotionEngine.Models.PromotionEngineModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<head>
+
+</head>
+
+<body>
+    <h2>Promotion Engine</h2>
+    <div class="row">
+        @using (Html.BeginForm("/Index", "PromotionEngineModel", FormMethod.Post))
+        {
+            <div class="=" form-group">
+                <label for="A">Number of items of SKU "A"</label>
+                <input type="number" class="form-control" id="A" name="A" value="@Model.A"" />
+
+            </div>
+            <div class="=" form-group">
+                <label for="B">Number of items of SKU "B"</label>
+                <input type="number" class="form-control" id="B" name="B" value="@Model.B" />
+
+            </div>
+            <div class="=" form-group">
+                <label for="C">Number of items of SKU "C"</label>
+                <input type="number" class="form-control" id="C" name="C" value="@Model.C" />
+
+            </div>
+            <div class="=" form-group">
+                <label for="D">Number of items of SKU "D"</label>
+                <input type="number" class="form-control" id="D" name="D" value="@Model.D" />
+            </div>
+
+            <br />
+
+            <div class="=" form-group">
+                <label for="Total">Total Order Value</label>
+                <input type="number" class="form-control" id="Total" name="D" value="@Model.Total" />
+            </div>
+
+            <br />
+
+            <button type="submit" class="btn btn-primary btn-lg" id="cal" value="cal" name="calculate">Calculate Value</button>
+        }
+
+
+    </div>
+</body>
+</html>
+
